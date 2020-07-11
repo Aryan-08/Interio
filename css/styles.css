@@ -1,0 +1,128 @@
+.row-header{
+    margin:0px auto;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
+
+.footer{
+    background-color: lightgray;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+body{
+    padding:50px 0px 0px 0px;
+    z-index: 0;
+}
+.navbar-dark{
+    background-color: black;
+    height: 100px;
+}
+.tab-content{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.carousel {
+    background-color: black;
+}
+
+.carousel-item {
+  height: 600px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 600px;
+    background-size: cover;
+}
+#carouselButton{
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    z-index:1;
+}
+.description{
+    background-color: aquamarine;
+    padding: 30px;
+    align-content: center;
+}
+.services-img{
+    height: 300px;
+    width:300px;
+}
+.heading{
+    font-weight: bold;
+}
+.header-content{
+    font-size:150%;
+}
+.team-img{
+    height: 400px;
+    width: 250px;
+}
+.team-info{
+    background-color: white;
+    height: 100px;
+    border-radius: 2px;
+    padding: 10px;
+}
+#about, #gallery{
+    background-color:aquamarine;
+}
+.gallery-img{
+    height: 200px;
+    width: 270px;
+    padding: 12px;
+}
+.team-member, .gallery-img, .services{
+    transition: transform .5s;
+}
+.team-member:hover, .gallery-img:hover, .services:hover{
+    transform:scale(1.1)
+}
+@media (max-width: 768px) {
+    .carousel {
+        height: 300px;
+    }
+
+    .carousel-item {
+        height: 300px;
+    }
+        .carousel-item img {
+            min-height: 300px;
+        }
+    .about-img{
+        width: 150px;
+        height: 100px;
+    }
+    .gallery-img{
+        width:200px;
+        padding: 4px;
+        height: 160px;
+    }
+    .team-member, .services{
+      margin-left: 50px;
+    }
+}
+@media (max-width:575px){
+    .icons{
+      margin-left: 50px;
+    }
+}
